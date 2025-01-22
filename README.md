@@ -3,10 +3,15 @@
 
  
  **Company**: CODTECH IT SOLUTIONS
+ 
  **Name**: Mohammad Salman Salahutheen 
+ 
  **INTERN ID**: CT6WEFH  
+ 
  **Domain**: Cyber Security & Ethical Hacking  
+ 
  **Duration**: December 17th, 2024, to February 2nd, 2025  
+ 
  **Mentor**: N. Santhosh 
 
  ## Overview of the Project
