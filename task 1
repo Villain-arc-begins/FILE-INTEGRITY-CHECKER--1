@@ -1,0 +1,31 @@
+import hashlib
+
+input_string = "salman's project"
+hash_obj = hashlib.new('sha256')
+hash_obj.update(input_string.encode('utf-8'))
+print("Expected hash:", hash_obj.hexdigest())
+
+
+def get_string_hash(data, hash_algorithm='sha256'):
+   
+    
+    try:
+        hash_obj = hashlib.new(hash_algorithm)
+        hash_obj.update(data.encode('utf-8'))  
+        return hash_obj.hexdigest()
+    except Exception as e:
+        print(f"Error generating hash: {e}")
+        return None
+
+if __name__ == "__main__":
+    input_string = "salman's project"  
+    hash_algo = "sha256"
+    expected_hash = "f2ca12921de147d155f0df07b2d2fee9e39b8e4380ed52fd6a959ac4fae4d4c0"
+    string_hash = get_string_hash(input_string, hash_algo)
+    if string_hash:
+        print(f"Computed {hash_algo} hash: {string_hash}")
+
+        if string_hash == expected_hash:
+            print("Integrity verified: The hash matches the expected value.")
+        else:
+            print("Integrity check failed: The hash does not match.")
