@@ -31,3 +31,4 @@ Indicates whether the file integrity check passed or failed.
 Handles common issues like invalid file paths, unsupported algorithms, and read errors gracefully.
 Prints user-friendly error messages to assist with debugging.
 ## Output 
+![Image](https://github.com/user-attachments/assets/d2e788cf-abca-40aa-b5ff-02a7d4437a09)
